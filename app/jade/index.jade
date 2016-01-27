@@ -9,109 +9,13 @@ html(lang="ru-RU")
     link(rel="stylesheet" href="css/main.css")
   body
     .wrapper: .header-wrapper
-      header.main-header
-        .logo: img.logo__image(src="img/logo.png")
-        .search
-          input.search__input(type="text" placeholder="Искать инструмент")
-          .search__input-icon.fa.fa-search
-        nav.right-menu: ul.right-menu__list
-          li.right-menu__item: a.right-menu__link(href="#1") Юридическим лицам
-      nav.main-nav: ul.main-nav__list
-        li.main-nav__item: a.main-nav__link(href="#1") Главная
-        li.main-nav__item: a.main-nav__link(href="#1") Аренда инструмента
-        li.main-nav__item: a.main-nav__link(href="#1") Продажа инструмента
-        li.main-nav__item: a.main-nav__link(href="#1") Расходные материалы
-        li.main-nav__item: a.main-nav__link(href="#1") Услуги
-        li.main-nav__item: a.main-nav__link(href="#1") Контакты
-        li.main-nav__item: a.main-nav__link(href="#1") О нас
-      .breadcrumbs-wrap: ul.breadcrumbs-list
-        li.breadcrumbs-list__item: a.breadcrumbs-list__link Главная
-      .slider-wrap
-        //- img.slider-wrap__img(src="img/bg2_2.jpg")
-        .slider-wrap__contacts
-          ul.contacts-list
-            li.contacts-list__item.contacts-list__item--velcom + 375 29 1 800 600
-            li.contacts-list__item.contacts-list__item--mts + 375 33 640 0 660
-            li.contacts-list__item.contacts-list__item--address г. Минск, 1-й Короткий пер., 18а
-             li.contacts-list__item.contacts-list__item--time 9:00 - 19:00
-            li.contacts-list__item.contacts-list__item--day
-            li.contacts-list__item.contacts-list__item--day
-            li.contacts-list__item.contacts-list__item--day
-            li.contacts-list__item.contacts-list__item--day
-            li.contacts-list__item.contacts-list__item--day
-            li.contacts-list__item.contacts-list__item--day
-            li.contacts-list__item.contacts-list__item--day-vacancy
-          button.raw-button Карта проезда
-
+      include includes/_header
       .content-wrapper
-        aside.sidebar
-          .category-wrap: ul.category
-            .category-heading Прокат инструмента
-            li.category__item: a.category__link(href="#1")  Алмазный инструмент
-            li.category__item: a.category__link(href="#1")  Дорожно-строительный инструмент
-            li.category__item: a.category__link(href="#1")  Измерительный инструмент
-            li.category__item: a.category__link(href="#1")  Компрессорное оборудование
-            li.category__item: a.category__link.a.category__link--active(href="#1")  Моечное и уборочное оборудование
-            li.category__item: a.category__link(href="#1")  Садовый и парковый инструмент
-            li.category__item: a.category__link(href="#1")  Сварочное оборудование и зарядные устройства
-            li.category__item: a.category__link(href="#1")  Оборудование для раствора и бетона
-            li.category__item: a.category__link(href="#1")  Тепловые пушки дизельные
-          .category-wrap: ul.category
-            .category-heading Услуги
-            li.category__item: a.category__link(href="#1")  Благоустройство территории
-            li.category__item: a.category__link(href="#1")  Алмазное сверление отверстий
-            li.category__item: a.category__link(href="#1")  Алмазная резка
-            li.category__item: a.category__link(href="#1")  Демонтаж
-            li.category__item: a.category__link(href="#1")  Шлифовка пола
+        include includes/_sidebar
         main.right-col
-          section.rent-section
-            h2.right-col__heading Аренда инструмента в Минске
-            article.right-col__article  Аренда спецоборудования - это уникальная возможность сохранить деньги, усилия и нервы, потому как самую дорогую и высокотехнологичную технику можно получить по очень доступной цене. Наша компания успела зарекомендовать себя как надежного и обладающего высоким качеством сервиса партнером. Предлагаем ознакомиться со списком строительного инструмента и оборудования предоставляемого в аренду.
-            ul.right-col__tools-list
-              li.right-col__tools-item
-                .tool-type.tool-type--fuel Бензоинструмент
-                .tool-img: img.tool-img__source(src="http://placehold.it/200x170")
-                .tool-info
-                .tool-price 150 000  
-                  small.tool-price__period / Сутки
-                button.tool-button Заказать аренду
-              li.right-col__tools-item
-                .tool-type.tool-type--electric Электроинструмент
-                .tool-img: img.tool-img__source(src="http://placehold.it/200x170")
-                .tool-info
-                .tool-price 150 000 
-                  small.tool-price__period / Сутки
-                button.tool-button Заказать аренду
-              li.right-col__tools-item
-                .tool-type.tool-type--hand Ручной инструмент
-                .tool-img: img.tool-img__source(src="http://placehold.it/200x170")
-                .tool-info
-                .tool-price 150 000
-                  small.tool-price__period / Сутки
-                button.tool-button Заказать аренду
-            button.raw-button Покажите больше инструмента
-          section.services-section            
-            h2.right-col__heading Строительные услуги
-            article.right-col__article  Любое обращение к нам клиента не остаётся без внимания.Наши специалисты ответят на все интересующие Вас вопросы, дадут план действия, а после сагласования времени и дня приедут к Вам на объект произведут все необходимые измерительные работы на участке либо на объекте и уже после этого составят полную смету требуемых работ и материалов.
-            dl.services-section__list
-              dt.services-section__title Благоустройство территории
-              dd.services-section__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, iste!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsa corrupti magnam maiores commodi blanditiis sit aliquam facere, excepturi voluptas, autem reiciendis numquam totam exercitationem! Recusandae fugit, praesentium. Reprehenderit dolor, sit corporis voluptatibus laborum ex magnam illum esse dolore illo.
-                button.services-section__more Узнать больше
-              dt.services-section__title Шлифовка мозаичных / бетонных полов
-              dd.services-section__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, iste!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsa corrupti magnam maiores commodi blanditiis sit aliquam facere, excepturi voluptas, autem reiciendis numquam totam exercitationem! Recusandae fugit, praesentium. Reprehenderit dolor, sit corporis voluptatibus laborum ex magnam illum esse dolore illo.
-                button.services-section__more Узнать больше
-              dt.services-section__title Алмазная резка и сверление
-              dd.services-section__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, iste!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsa corrupti magnam maiores commodi blanditiis sit aliquam facere, excepturi voluptas, autem reiciendis numquam totam exercitationem! Recusandae fugit, praesentium. Reprehenderit dolor, sit corporis voluptatibus laborum ex magnam illum esse dolore illo.
-                button.services-section__more Узнать больше
-            button.raw-button Ознакомиться со списком услуг
-          section.clients-section            
-            h2.right-col__heading Среди наших клиентов
-            article.right-col__article
-              ul.clients-section__list
-                li.clients-section__item: img.clients-section__image(src="files/infotelecom.png")
-                li.clients-section__item: img.clients-section__image(src="files/anfor.png")
-                li.clients-section__item: img.clients-section__image(src="files/belkom.png")
-                li.clients-section__item: img.clients-section__image(src="files/abrams.png")
+          include includes/_rent-section
+          include includes/_services-section
+          include includes/_clients-section
 
 
 
