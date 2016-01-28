@@ -1,3 +1,8 @@
+.wrapper:after, .header-wrapper:after, .right-menu__list:after, .breadcrumbs-list:after, .content-wrapper:after, .contacts-list:after, .clients-section__list:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .raw-button {
   padding: 8px 5px;
   outline: none;
@@ -11,27 +16,35 @@
     background: #FF8C00;
     color: white; }
 
-.services-section__more {
+.services-section__more, .rent-section__more {
   outline: none;
   border: none;
   padding: 0;
   margin: 0; }
 
-.wrapper:after, .header-wrapper:after, .right-menu__list:after, .breadcrumbs-list:after, .content-wrapper:after, .contacts-list:after, .clients-section__list:after {
-  content: "";
-  display: table;
-  clear: both; }
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden; }
 
-body {
-  min-width: 1100px; }
+.wrapper:after {
+  content: "";
+  height: 90px;
+  display: block; }
+
+.page-footer {
+  height: 80px;
+  margin-top: -80px;
+  background: #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #f2f2f2; }
 
 .header-wrapper {
-  height: 60px;
   border-bottom: 1px #f2f2f2 solid;
   background: #F5F7F7; }
 
 .main-header {
-  height: 100%;
+  height: 60px;
   max-width: 1100px;
   margin: 0 auto;
   position: relative; }
@@ -222,100 +235,23 @@ body {
     .category__icon--group1 {
       background-position: -45px -77px; }
 
-.right-col {
-  width: 800px;
-  margin: 10px 0 0 0;
-  float: left;
-  padding: 10px 0 10px 30px; }
-  .right-col__heading {
-    font-family: "LatoWeb";
-    font-weight: 400; }
-  .right-col__article {
-    color: #6E7672;
-    text-align: justify;
-    padding: 10px 0 10px 0; }
-  .right-col__tools-list {
-    vertical-align: middle;
-    text-align: justify;
-    text-align-last: justify;
-    margin: 0 auto;
-    padding: 0 0; }
-    .right-col__tools-list:after {
-      display: inline-block;
-      content: '';
-      height: 0px;
-      width: 100%;
-      overflow: hidden;
-      visibility: hidden; }
-  .right-col__tools-item {
-    display: inline-block;
-    height: 300px;
-    width: 32%;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
-  .right-col .tool-type {
-    display: inline-block;
-    border-radius: 3px;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-family: "LatoWebBold";
-    padding: 4px 8px;
-    color: #fff;
-    margin: 10px 0 0 10px; }
-    .right-col .tool-type--fuel {
-      background: orange; }
-    .right-col .tool-type--electric {
-      background: #c656dd; }
-    .right-col .tool-type--hand {
-      background: #3ad1aa; }
-  .right-col .tool-img {
-    height: 170px;
-    margin: 10px 0 0 10px; }
-    .right-col .tool-img__source {
-      max-width: 100%; }
-  .right-col .tool-price {
-    color: #121313;
-    font-weight: 900;
-    font-size: 21px;
-    display: inline-block;
-    margin: 10px 0 0 10px; }
-    .right-col .tool-price__period {
-      font-weight: normal;
-      font-size: 13px;
-      color: #8E9994; }
-  .right-col .tool-button {
-    font-size: 13px;
-    padding: 5px 14px;
-    margin-right: 4px;
-    display: inline-block;
-    margin: 10px 0 0 10px;
-    border-radius: 3px;
-    background: #fff;
-    border: 1px solid #B89F94;
-    color: #B89F94;
-    outline: none;
-    transition: all .3s; }
-    .right-col .tool-button:hover {
-      background: #137BC0;
-      color: white;
-      border-color: #137BC0; }
-
-.services-section {
-  margin: 10px 0 0 0; }
-  .services-section__list {
+.services-section, .rent-section {
+  margin: 0 0 10px 0; }
+  .services-section__list, .rent-section__list {
     box-sizing: border-box; }
-  .services-section__description {
+  .services-section__description, .rent-section__description {
     padding: 0 0 0 10px;
     margin: 0 0 20px 0;
     font-size: 14px;
     box-sizing: border-box; }
-  .services-section__title {
+  .services-section__title, .rent-section__title {
     font-family: "LatoWebSemibold";
     font-size: 15px;
     color: #FF8C00;
     margin: 0 0 5px 10px;
     border-bottom: 1px dotted #FF8C00;
     display: inline-block; }
-  .services-section__more {
+  .services-section__more, .rent-section__more {
     border-radius: 2px;
     font-size: 12px;
     padding: 3px 4px;
@@ -323,7 +259,7 @@ body {
     background: #3AD1AA;
     transition: all .3s;
     border: 1px solid #3AD1AA; }
-    .services-section__more:hover {
+    .services-section__more:hover, .rent-section__more:hover {
       color: #000;
       background: #fff;
       border: 1px solid #3AD1AA; }

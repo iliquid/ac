@@ -1,0 +1,13 @@
+$main-width: 1100px;
+$regular: 'LatoWeb';
+$bold: 'LatoWebBold';
+$light: 'LatoWebLight';
+$semibold: 'LatoWebSemibold';
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

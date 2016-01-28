@@ -1,10 +1,10 @@
+@import 'variables'; 
 
 
 * {
 	box-sizing: border-box;
 }
 body {
-	height: 100%;
 	padding: 0;
 	margin: 0;
 	width:100%;
@@ -29,4 +29,32 @@ h1, h2, h3, h4, h5 {
 p, dl, dt, dd {
 	padding: 0;
 	margin: 0;
+}
+
+.raw-button {
+	padding: 8px 5px;
+	outline: none;
+	border: none;
+	font-family: $bold;
+	border-radius: 3px;
+	width:100%;
+	background:#e3efef;
+	transition:all .2s ease-in;
+	&:hover {
+		background:#FF8C00;
+		color: white;
+	}
+}
+%btn-reset {
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

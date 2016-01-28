@@ -9,7 +9,7 @@ var gulp = require('gulp');
 // Directory variables
 	var localhostDir = './app/';
 	var jadeCompiled = './app/';
-	var jadePath = './app/jade/*.jade';
+	var jadePath = './app/jade/**/*.jade';
 	var scssCompiled = './app/css';
 	var scssPath = './app/scss/*.scss';
 

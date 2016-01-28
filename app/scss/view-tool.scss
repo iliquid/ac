@@ -1,0 +1,88 @@
+@import 'variables'; 
+
+.view-tool {
+	margin: 10px 0 0 0;
+
+overflow: hidden;
+	&__left-col {
+		width: 40%;
+		height: 300px;
+		background:#ccc;
+		float: left;
+	}
+	&__image-source {
+		max-width:100%;
+	}
+	&__right-col {
+		
+		margin: 0 5px;
+		width: 55%;
+		min-height: 360px;
+		// background: #444;
+		float: right;
+	}
+	&__info p {
+		margin: 5px 0;
+		font-size: 14px;
+		text-align: justify;
+		text-indent: 20px;
+		}	
+
+	&__subheading {
+		color: #8e9994;
+		font-family:$light;
+	}
+
+
+}
+
+.table-chars {
+	border: 1px solid #e7e7e7;
+	width:100%;
+		border-top-right-radius: 3px;
+	    border-top-left-radius: 3px;
+	// background:#222;
+	font-size: 14px;
+	&__row {	
+		
+		
+		&:nth-child(even) {
+			background:#3ad1aa;
+			color:white;
+
+		}
+		td {
+			padding: 5px 10px;
+			
+		}
+		td:first-child {
+				font-family: $bold;
+			}
+	}
+	&__title {			    
+	    background: #fff;
+	    font-family: $bold;
+	    font-size: 16px;
+	    padding: 10px 10px;
+	    color: #8e9994;
+	}
+}
+.pricing-mini {
+	width:100%;
+	thead, tbody {
+		text-align: left;
+		font-size: 14px;
+		th, td {
+			padding: 7px 9px;
+		}
+		td {
+			font-family: $bold;
+		}
+
+	}
+	thead {
+		background:#e7e7e7;
+		color: #8e9994;
+	}
+	
+}

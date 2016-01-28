@@ -8,6 +8,7 @@ html(lang="ru-RU")
     link(rel="stylesheet" href="css/latofonts.css")
     link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="css/tools.css")
+    link(rel="stylesheet" href="css/view-tool.css")
   body
     .wrapper
       .header-wrapper
@@ -15,11 +16,11 @@ html(lang="ru-RU")
       .content-wrapper
           include includes/_sidebar
           main.right-col
-            //- include includes/_list-cat
+            include includes/_view-tool
+            include includes/_view-tool-more
             //- include includes/_services-section
             //- include includes/_clients-section
     footer.page-footer
-
 
 
 
