@@ -31,6 +31,8 @@ body {
 	min-height:100%;
 	height:auto !important;
 	overflow:hidden;
+	// background:#e7e7e7;
+
 }
 .wrapper:after {
 	content: "";
@@ -46,7 +48,6 @@ body {
 }
 
 .header-wrapper {
-	
 	border-bottom: 1px #f2f2f2 solid;
 	background:#F5F7F7;
 	@extend %clearfix;
@@ -176,6 +177,7 @@ border-top:1px solid #E8ECED;
 	width:$main-width;
 	margin: 0 auto;
 	@extend %clearfix;
+	
 
 }
 .slider-wrap {
@@ -191,8 +193,8 @@ border-top:1px solid #E8ECED;
 	&__contacts {
 		float: right;
 		margin: 40px 140px 0 0;
-		width:220px;
-		height: 200px;
+		// width:220px;
+		// height: 200px;
 		
 	}
 }
@@ -217,7 +219,7 @@ border-top:1px solid #E8ECED;
 		height: 15px;
 		background:#3AD1AA;
 		margin:0 10px 0 0;
-		border:1px solid white;
+		
 	}
 	&__item--day-vacancy {
 		@extend .contacts-list__item--day;
@@ -236,24 +238,26 @@ border-top:1px solid #E8ECED;
 }
 .sidebar {
 	float: left;
+	box-shadow: 0 0 8px rgba(0,0,0,0.12);
 	width:300px;
 	min-height: 500px;
+	// background:#fff;
 
 
 }
 .category {
 	margin: 10px 0 0 0;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);;
-    background: #E3EFEF;
-    border-radius: 3px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    // background: #E3EFEF;
+    // border-radius: 3px;
     
 	&-heading {
-		border: 1px solid #e7e7e7;
+		// border: 1px solid #e7e7e7;
 		border-top-right-radius: 3px;
 		border-top-left-radius: 3px;
 		background:#fff;
 		font-family: $bold;
-		font-size: 16px;
+		font-size: 18px;
 		padding: 10px 10px;
 		color: #000;
 		// background: linear-gradient(to bottom, #383838, #2f2f2f) repeat scroll 0 0 #333333;
@@ -267,7 +271,7 @@ border-top:1px solid #E8ECED;
 			margin: 0 0 0 0;
 			color: #8e9994;
 			text-decoration: none;
-			font-size: 15px;
+			font-size: 14px;
 			transition: all .2s ease-in;
 			position: relative;
 			
@@ -297,8 +301,9 @@ border-top:1px solid #E8ECED;
 
 
 .services-section, .rent-section {
-	margin: 0 0 10px 0;
-	
+	margin: 0 0 10px 10px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+	padding: 10px 10px;
 	&__list {
 		box-sizing:border-box;
 	}

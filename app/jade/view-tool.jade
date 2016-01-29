@@ -17,12 +17,27 @@ html(lang="ru-RU")
           include includes/_sidebar
           main.right-col
             include includes/_view-tool
-            include includes/_view-tool-more
+            include includes/_list-cat
             //- include includes/_services-section
             //- include includes/_clients-section
     footer.page-footer
-
-
+    script(src="libs/jquery/jquery.min.js")
+    script(src="libs/bPopup/jquery.bpopup.min.js")
+    script(src="js/main.js")
+    .slider-wrap__contacts#popup-window
+          ul.contacts-list
+            li.contacts-list__item.contacts-list__item--velcom + 375 29 1 800 600
+            li.contacts-list__item.contacts-list__item--mts + 375 33 640 0 660
+            li.contacts-list__item.contacts-list__item--address г. Минск, 1-й Короткий пер., 18а
+             li.contacts-list__item.contacts-list__item--time 9:00 - 19:00
+            li.contacts-list__item.contacts-list__item--day
+            li.contacts-list__item.contacts-list__item--day
+            li.contacts-list__item.contacts-list__item--day
+            li.contacts-list__item.contacts-list__item--day
+            li.contacts-list__item.contacts-list__item--day
+            li.contacts-list__item.contacts-list__item--day
+            li.contacts-list__item.contacts-list__item--day-vacancy
+          button.raw-button Карта проезда
 
 
 
