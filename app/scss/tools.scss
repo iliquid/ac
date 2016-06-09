@@ -1,8 +1,7 @@
 @import 'variables';
  
 .right-col {
-	width: 800px;
-	float: left;
+	
     // background:#fff;
 	// padding: 10px 0 10px 30px;
  	&__heading {
@@ -15,13 +14,15 @@
  		text-align: justify;
  		font-size:14px;
         margin: 10px 0;
-
+background:#fff;
+overflow: hidden;
+padding: 0 0 10px 0;
  	}
  	&__tools-list {
 		vertical-align: middle;
 		// text-align: justify;
 		// text-align-last: justify;
-		margin: 0 auto;
+		margin: 15px auto;
 		padding: 0 0;
 			&:after {
 				display: inline-block;
@@ -35,7 +36,7 @@
  	&__tools-item {
         margin: 0 7px 12px 0;
         vertical-align: top;
- 		display: inline-block;
+ 		float: left;
  		min-height: 300px;
  		width: 32%;
  		border:1px solid #e9e9e9;
@@ -79,12 +80,13 @@
     }
  	.tool-img {
         
- 		height: 200px;
-        width:220px;
- 		margin: 10px 0 0 10px;
+      width: 100%;
+    height: 200px;
+ 		margin: 0 auto;
+    text-align: center;
  		&__source {
  			max-width: 100%;
-            max-height: 100%;
+      max-height: 100%;
  		}
  	}
  	.tool-price {
@@ -100,46 +102,79 @@
     	}
  	}
 .tool-button {      
-        width:95%;
+        width:100%;
         margin: 10px auto;
         text-align: center;
+       
         &__order, &__more {
          font-size: 13px;
-         padding: 4px 13px;
+         padding: 6px 13px;
          display: inline-block;      
          border-radius: 3px;
-        background:#137BC0;
+        text-decoration: none;
+        // background:#137BC0;
         color: white;
-            border: 1px solid #137BC0;
-         font-family:$light;
+        
+         font-family:$bold;
          outline: none;
          transition: all .3s;
              &:hover {
              background:#fff;
          border: 1px solid #B89F94;
-         color: #B89F94;
+         color: #000;
             }
+           
         }
+         &__more {
+              background: #3AD1AA;
+              border:1px solid #3AD1AA;
+            }
+             &__order {
+              margin: 0 5px 5px 0;
+              color:orange;
+              background: white;
+              
+              border:1px solid #3AD1AA;
+            }
         
+}
+.pager {
+  @extend %clearfix;
+  margin: 0 0 10px 0;
+  &__item {
+    float: left;
+    border:1px solid #CECECE;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 5px 0 0;
+    font-size: 14px;
+    box-shadow: 0 1px #EBEBEB;
+  }
+  &__link, &__link--current  {
+    text-decoration: none;
+    padding: 4px 7px;
+    display: block;
+    color: lighten(#5e5e5e, 20%);
+    transition: all .3s;
+    background: rgb(240,240,240); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(240,240,240,1) 0%, rgba(227,226,226,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(240,240,240,1) 0%,rgba(227,226,226,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(240,240,240,1) 0%,rgba(227,226,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e3e2e2',GradientType=0 ); /* IE6-9 */
+    &:hover {
+      background:#E0E0E0 0 0 repeat-x;
+    }
+    &__link--current {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c2c2c2+0,e3e3e3+10,e3e3e3+10,e4e4e4+99 */
+      // background: rgb(194,194,194); /* Old browsers */
+      // background: -moz-linear-gradient(top,  rgba(194,194,194,1) 0%, rgba(227,227,227,1) 10%, rgba(227,227,227,1) 10%, rgba(228,228,228,1) 99%); /* FF3.6-15 */
+      // background: -webkit-linear-gradient(top,  rgba(194,194,194,1) 0%,rgba(227,227,227,1) 10%,rgba(227,227,227,1) 10%,rgba(228,228,228,1) 99%); /* Chrome10-25,Safari5.1-6 */
+      // background: linear-gradient(to bottom,  rgba(194,194,194,1) 0%,rgba(227,227,227,1) 10%,rgba(227,227,227,1) 10%,rgba(228,228,228,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', endColorstr='#e4e4e4',GradientType=0 ); /* IE6-9 */
+      background:#000;
+    }
+  }
 }
 
 
-
- // 	font-size: 13px;
-  //   	padding: 5px 14px;
-  //   	display: inline-block;
-  //       float: left;
-  //   	// margin: 10px 0 0 10px;
-  //   	border-radius: 3px;
-  //   	background:#fff;
-  //   	border: 1px solid #B89F94;
-  //   	color: #B89F94;
-  //   	outline: none;
-  //   	transition: all .3s;
-  //   	&:hover {
-  //   		background:#137BC0;
-  //   		color: white;
-  //   		border-color:#137BC0;
-  //   	}
- 	// }
 

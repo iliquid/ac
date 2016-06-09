@@ -2,23 +2,41 @@ doctype html
 html(lang="ru-RU")
   head
     title ArendaCity
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="libs/normalize-css/normalize.css")
     link(rel="stylesheet" href="libs/font-awesome/css/font-awesome.css")
     link(rel="stylesheet" href="css/unstyle.css")
     link(rel="stylesheet" href="css/latofonts.css")
     link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="css/tools.css")
+    link(rel="stylesheet" href="css/view-tool.css")
+    link(rel="stylesheet" href="css/responsive.css")
+    script(src="libs/modernizr/modernizr.js")
+    script(src="libs/jquery/jquery.min.js")
+    script(src="libs/jquery-touchswipe/jquery.touchSwipe.min.js")
+    script(src="js/main.js")
+
   body
+    a.back-to-top(href='#') Back to Top
+    a.menu-toast(href='#1', data-toggle='.right-col', data-slide='.sidebar') Back to Top
     .wrapper
       .header-wrapper
         include includes/_header
       .content-wrapper
-          include includes/_sidebar
-          main.right-col
-            //- include includes/_list-cat
-            //- include includes/_services-section
-            //- include includes/_clients-section
+        include includes/_sidebar
+        main.right-col
+          
+          include includes/_list-cat
+          //- include includes/_services-section
+          //- include includes/_clients-section
     footer.page-footer
+      .page-footer-wrap
+        .footer-pull-left 
+          p.footer-pull-left__text © 2016 ИП Корнеев С.С. 
+            a.footer-pull-left__link(href="/") Аренда строительного оборудования в Минске
+        .footer-pull-right
+          p.footer-pull-right__text Powered by MODX Revolution 
+            i.fa.fa-modx
   
 
 

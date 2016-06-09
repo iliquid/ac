@@ -1,0 +1,38 @@
+@import 'variables';
+.gallery-wrapper {
+	width:90%;
+	margin: 20px auto;
+}
+.gallery-list {
+	@extend %clearfix;
+	margin: 0 auto;
+	&__item {
+		float: left;
+		width:30%;
+		
+			margin: 0 22px 20px 0;
+		
+
+	}
+	&__link {
+		display: block;
+		text-decoration: none;
+		
+		
+	}
+	&__image {
+		opacity: 0.5;
+		transition: all .3s;
+		max-width: 100%;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&__title {
+		color: #8E9994;
+		font-weight: normal;
+		font-size: 14px;
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+}

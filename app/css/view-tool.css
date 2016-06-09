@@ -8,7 +8,8 @@
   .view-tool__image {
     width: 100%;
     text-align: center;
-    border: 1px solid #e7e7e7; }
+    border: 1px solid #e7e7e7;
+    margin: 0 0 5px 0; }
   .view-tool__image-source {
     max-width: 100%;
     max-height: 100%; }
@@ -26,38 +27,39 @@
     margin: 10px 0;
     color: #8e9994;
     font-family: "LatoWebLight"; }
-  .view-tool__kit-list {
+  .view-tool__kit-list ul {
     font-size: 14px;
     margin: 0 0 0 10px; }
+  .view-tool__kit-list ul li {
+    padding: 0 0 0 10px;
+    text-indent: 0px;
+    margin: 0 0 5px 0; }
+    .view-tool__kit-list ul li:before {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f054";
+      color: grey;
+      padding: 0 10px 0 0; }
+    .view-tool__kit-list ul li__kit-list li:first-letter {
+      text-transform: uppercase; }
 
-.kit-list__item {
-  padding: 0 0 0 10px;
-  text-indent: 0px;
-  margin: 0 0 5px 0; }
-  .kit-list__item:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f054";
-    color: grey;
-    padding: 0 10px 0 0; }
-
-.table-chars {
+.view-tool__right-col table {
   border: 1px solid #e7e7e7;
   width: 100%;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   font-size: 14px; }
-  .table-chars__row:nth-child(even) {
+  .view-tool__right-col table tr:nth-child(even) {
     background: #3ad1aa;
     color: white; }
-  .table-chars__row td {
+  .view-tool__right-col table tr td {
     padding: 5px 10px; }
-  .table-chars__row td:first-child {
+  .view-tool__right-col table tr td:first-child {
     font-family: "LatoWebBold"; }
-  .table-chars__title {
+  .view-tool__right-col table caption {
     background: #fff;
     font-family: "LatoWebBold";
     font-size: 16px;

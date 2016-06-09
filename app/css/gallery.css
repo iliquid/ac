@@ -1,0 +1,30 @@
+.gallery-list:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.gallery-wrapper {
+  width: 90%;
+  margin: 20px auto; }
+
+.gallery-list {
+  margin: 0 auto; }
+  .gallery-list__item {
+    float: left;
+    width: 30%;
+    margin: 0 22px 20px 0; }
+  .gallery-list__link {
+    display: block;
+    text-decoration: none; }
+  .gallery-list__image {
+    opacity: 0.5;
+    transition: all .3s;
+    max-width: 100%; }
+    .gallery-list__image:hover {
+      opacity: 1; }
+  .gallery-list__title {
+    color: #8E9994;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 10px 0; }

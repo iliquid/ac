@@ -7,19 +7,36 @@
     <link rel="stylesheet" href="css/unstyle.css">
     <link rel="stylesheet" href="css/latofonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/tools.css">
     <link rel="stylesheet" href="css/view-tool.css">
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bPopup/jquery.bpopup.min.js"></script>
+    <script src="libs/modernizr/modernizr.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="header-wrapper">
         <header class="main-header">
-          <div class="logo"><img src="img/logo.png" class="logo__image"></div>
+          <div class="logo">
+            <h1><a href="/"><img src="img/logo.png" title="Аренда Сити" class="logo__image"></a></h1>
+          </div>
           <div class="search">
-            <input type="text" placeholder="Искать инструмент" class="search__input">
-            <div class="search__input-icon fa fa-search"></div>
+            <form action="#1" method="#" class="search-form">
+              <div class="search__input-icon fa fa-search"></div>
+              <input type="text" name="" id="" value="" placeholder="на лабутенах нах" class="search__input">
+            </form>
           </div>
           <nav class="right-menu">
+            <ul class="right-menu__socials">
+              <li class="right-menu__socials-item"><a href="https://vk.com/prokat.minsk" title="VKontakte" target="_blank" class="right-menu__socials-link right-menu__socials-link--vk"> </a></li>
+              <li class="right-menu__socials-item"><a href="#1" title="Odnoklassniki" target="_blank" class="right-menu__socials-link right-menu__socials-link--ok"> </a></li>
+              <li class="right-menu__socials-item"><a href="https://www.facebook.com/arendacityminsk/" title="Facebook" target="_blank" class="right-menu__socials-link right-menu__socials-link--fb"> </a></li>
+              <li class="right-menu__socials-item"><a href="https://www.instagram.com/arendacity/" title="Instagram" target="_blank" class="right-menu__socials-link right-menu__socials-link--in"> </a></li>
+              <li class="right-menu__socials-item"><a href="https://plus.google.com/+ArendacityBy1" title="Google Plus" target="_blank" class="right-menu__socials-link right-menu__socials-link--gp"></a></li>
+              <li class="right-menu__socials-item"><a href="skype:arenda.city" title="Skype" target="_blank" class="right-menu__socials-link right-menu__socials-link--sk"></a></li>
+            </ul>
             <ul class="right-menu__list">
               <li class="right-menu__item"><a href="#1" class="right-menu__link">Юридическим лицам</a></li>
             </ul>
@@ -36,13 +53,8 @@
             <li class="main-nav__item"><a href="#1" class="main-nav__link">О нас</a></li>
           </ul>
         </nav>
-        <div class="breadcrumbs-wrap">
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link">Главная</a></li>
-          </ul>
-        </div>
         <div class="slider-wrap">
-          <div class="slider-wrap__contacts">
+          <div class="slider-wrap__contacts"> 
             <ul class="contacts-list">
               <li class="contacts-list__item contacts-list__item--velcom">+ 375 29 1 800 600</li>
               <li class="contacts-list__item contacts-list__item--mts">+ 375 33 640 0 660</li>
@@ -56,13 +68,21 @@
               <li class="contacts-list__item contacts-list__item--day"></li>
               <li class="contacts-list__item contacts-list__item--day"></li>
               <li class="contacts-list__item contacts-list__item--day-vacancy"></li>
-            </ul>
-            <button class="raw-button">Карта проезда</button>
+            </ul><a class="raw-button">Карта проезда</a>
           </div>
+        </div>
+        <div class="breadcrumbs-wrap">
+          <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs-list">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item breadcrumbs-list__item--first"><a itemprop="item" href="#1" class="breadcrumbs-list__link">Главная</a></li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item"><a itemprop="item" href="#1" class="breadcrumbs-list__link">Главная</a></li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item"><a itemprop="item" href="#1" class="breadcrumbs-list__link">Главная</a></li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item breadcrumbs-list__item--last"><a itemprop="item" class="breadcrumbs-list__link breadcrumbs-list__link--last">Прокат инструмента</a></li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-list__item breadcrumbs-list__item--end"></li>
+          </ul>
         </div>
       </div>
       <div class="content-wrapper">
-        <aside class="sidebar">
+        <aside class="sidebar">  
           <div class="category-wrap">
             <ul class="category">
               <div class="category-heading">Прокат инструмента</div>
@@ -117,6 +137,25 @@
               </dd>
             </dl>
             <button class="raw-button">Ознакомиться со списком услуг</button>
+          </section>
+          <section class="services-section">
+            <h2 class="right-col__heading">Выполненные объекты по благоустройству территорий</h2>
+            <div class="gallery-wrapper">
+              <ul class="gallery-list">
+                <li class="gallery-list__item"><a href="#1" class="gallery-list__link">
+                    <h3 class="gallery-list__title">п. Озеро</h3><img src="http://placehold.it/222x200" class="gallery-list__image"></a></li>
+                <li class="gallery-list__item"><a class="gallery-list__link">
+                    <h3 class="gallery-list__title">Колодищи</h3><img src="http://placehold.it/222x200" class="gallery-list__image"></a></li>
+                <li class="gallery-list__item"><a class="gallery-list__link">
+                    <h3 class="gallery-list__title">Городище</h3><img src="http://placehold.it/222x200" class="gallery-list__image"></a></li>
+                <li class="gallery-list__item"><a class="gallery-list__link">
+                    <h3 class="gallery-list__title">Дрозды</h3><img src="http://placehold.it/222x200" class="gallery-list__image"></a></li>
+                <li class="gallery-list__item"><a class="gallery-list__link">
+                    <h3 class="gallery-list__title">д. Бухачи</h3><img src="http://placehold.it/222x200" class="gallery-list__image"></a></li>
+                <li class="gallery-list__item"><a class="gallery-list__link">
+                    <h3 class="gallery-list__title">п. Сранский</h3><img src="http://placehold.it/222x200" class="gallery-list__image"></a></li>
+              </ul>
+            </div>
           </section>
         </main>
       </div>

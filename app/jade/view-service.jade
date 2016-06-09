@@ -6,9 +6,12 @@ html(lang="ru-RU")
     link(rel="stylesheet" href="libs/font-awesome/css/font-awesome.css")
     link(rel="stylesheet" href="css/unstyle.css")
     link(rel="stylesheet" href="css/latofonts.css")
+    link(rel="stylesheet" href="css/view-service.css")
+    link(rel="stylesheet" href="css/gallery.css")
     link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="css/tools.css")
     link(rel="stylesheet" href="css/view-tool.css")
+    script(src="libs/modernizr/modernizr.js")
   body
     .wrapper
       .header-wrapper
@@ -16,7 +19,8 @@ html(lang="ru-RU")
       .content-wrapper
           include includes/_sidebar
           main.right-col
-            include includes/_services-section
+            include includes/_view-services-section
+            include includes/_gallery-section
     footer.page-footer
     script(src="libs/jquery/jquery.min.js")
     script(src="libs/bPopup/jquery.bpopup.min.js")

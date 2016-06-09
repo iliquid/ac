@@ -1,17 +1,21 @@
+
 section.rent-section
+            .swipe-area
+              a.menu-toast(href='#1', data-toggle='.right-col', data-slide='.sidebar')      
             h2.right-col__heading Моечное и уборочное оборудование
             article.right-col__article  Аренда спецоборудования - это уникальная возможность сохранить деньги, усилия и нервы, потому как самую дорогую и высокотехнологичную технику можно получить по очень доступной цене. Наша компания успела зарекомендовать себя как надежного и обладающего высоким качеством сервиса партнером. Предлагаем ознакомиться со списком строительного инструмента и оборудования предоставляемого в аренду.
             ul.right-col__tools-list
               li.right-col__tools-item
                 .tool-type.tool-type--fuel Бензоинструмент
                 a.tool-title(href="#1") Станок плиткорезный Norton TR 201 E
-                .tool-img: img.tool-img__source(src="../files/1.jpg")
+                  .tool-img
+                    img.tool-img__source(src="../files/1.jpg")
                 .tool-info
                 .tool-price 150 000  
                   small.tool-price__period / Сутки
                 .tool-button
-                  button.tool-button__order Заказать аренду
-                  button.tool-button__more Подробнее                  
+                  a.tool-button__order(href="#1") Заказать аренду
+                  a.tool-button__more(href="#1") Подробнее                  
               li.right-col__tools-item
                 .tool-type.tool-type--electric Электроинструмент
                 a.tool-title Плиткорез ручной WALMER MGL 600
@@ -20,8 +24,8 @@ section.rent-section
                 .tool-price 150 000 
                   small.tool-price__period / Сутки
                 .tool-button
-                  button.tool-button__order Заказать аренду
-                  button.tool-button__order Подробнее
+                  a.tool-button__order(href="#1") Заказать аренду
+                  a.tool-button__more(href="#1") Подробнее
               li.right-col__tools-item
                 .tool-type.tool-type--hand Ручной инструмент
                 a.tool-title Отбойный молоток Bosch GSH 11 E
@@ -30,8 +34,8 @@ section.rent-section
                 .tool-price 150 000
                   small.tool-price__period / Сутки
                 .tool-button
-                  button.tool-button__order Заказать аренду
-                  button.tool-button__order Подробнее
+                  a.tool-button__order(href="#1") Заказать аренду
+                  a.tool-button__more(href="#1") Подробнее
               li.right-col__tools-item
                 .tool-type.tool-type--hand Ручной инструмент
                 a.tool-title Отбойный молоток TE 1000-AVR
@@ -40,8 +44,8 @@ section.rent-section
                 .tool-price 150 000
                   small.tool-price__period / Сутки
                 .tool-button
-                  button.tool-button__order Заказать аренду
-                  button.tool-button__order Подробнее
+                  a.tool-button__order(href="#1") Заказать аренду
+                  a.tool-button__more(href="#1") Подробнее
               li.right-col__tools-item
                 .tool-type.tool-type--hand Ручной инструмент
                 a.tool-title Отбойный молоток Bosch GSH
@@ -50,8 +54,8 @@ section.rent-section
                 .tool-price 150 000
                   small.tool-price__period / Сутки
                 .tool-button
-                  button.tool-button__order Заказать аренду
-                  button.tool-button__order Подробнее
+                  a.tool-button__order(href="#1") Заказать аренду
+                  a.tool-button__more(href="#1") Подробнее
               li.right-col__tools-item
                 .tool-type.tool-type--fuel Бензоинструмент
                 a.tool-title Виброплита реверсная NTC VDR 52
@@ -60,6 +64,12 @@ section.rent-section
                 .tool-price 150 000  
                   small.tool-price__period / Сутки
                 .tool-button
-                  button.tool-button__order Заказать аренду
-                  button.tool-button__order Подробнее
-            button.raw-button Покажите больше инструмента
+                  a.tool-button__order(href="#1") Заказать аренду
+                  a.tool-button__more(href="#1") Подробнее
+            //- button.raw-button Покажите больше инструмента
+            ul.pager
+              li.pager__item: a.pager__link(href="#1") 1
+              li.pager__item: a.pager__link.pager__link--current(href="#1") 2
+              li.pager__item: a.pager__link(href="#1") 3
+              li.pager__item: a.pager__link(href="#1") 4
+              li.pager__item: a.pager__link(href="#1") 5

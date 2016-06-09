@@ -1,10 +1,24 @@
 header.main-header
-        .logo: img.logo__image(src="img/logo.png")
+        .logo
+          h1
+            a(href="/")
+              img.logo__image(src="img/logo.png" title="Аренда Сити")
         .search
-          input.search__input(type="text" placeholder="Искать инструмент")
-          .search__input-icon.fa.fa-search
-        nav.right-menu: ul.right-menu__list
-          li.right-menu__item: a.right-menu__link(href="#1") Юридическим лицам
+          //- input.search__input(type="text" placeholder="Искать инструмент")
+          //- .search__input-icon.fa.fa-search
+          form.search-form(action="#1" method="#")
+              .search__input-icon.fa.fa-search
+              input.search__input(type="text" name="" id="" value="" placeholder="на лабутенах нах")
+        nav.right-menu
+          ul.right-menu__socials
+            li.right-menu__socials-item: a.right-menu__socials-link.right-menu__socials-link--vk(href="https://vk.com/prokat.minsk" title="VKontakte" target="_blank") 
+            li.right-menu__socials-item: a.right-menu__socials-link.right-menu__socials-link--ok(href="#1" title="Odnoklassniki" target="_blank") 
+            li.right-menu__socials-item: a.right-menu__socials-link.right-menu__socials-link--fb(href="https://www.facebook.com/arendacityminsk/" title="Facebook" target="_blank") 
+            li.right-menu__socials-item: a.right-menu__socials-link.right-menu__socials-link--in(href="https://www.instagram.com/arendacity/" title="Instagram" target="_blank") 
+            li.right-menu__socials-item: a.right-menu__socials-link.right-menu__socials-link--gp(href="https://plus.google.com/+ArendacityBy1" title="Google Plus" target="_blank")
+            li.right-menu__socials-item: a.right-menu__socials-link.right-menu__socials-link--sk(href="skype:arenda.city" title="Skype" target="_blank")
+          ul.right-menu__list
+            li.right-menu__item: a.right-menu__link(href="#1") Юридическим лицам
       nav.main-nav: ul.main-nav__list
         li.main-nav__item: a.main-nav__link(href="#1") Главная
         li.main-nav__item: a.main-nav__link(href="#1") Аренда инструмента
@@ -13,10 +27,9 @@ header.main-header
         li.main-nav__item: a.main-nav__link(href="#1") Услуги
         li.main-nav__item: a.main-nav__link(href="#1") Контакты
         li.main-nav__item: a.main-nav__link(href="#1") О нас
-      .breadcrumbs-wrap: ul.breadcrumbs-list
-        li.breadcrumbs-list__item: a.breadcrumbs-list__link Главная
+
       .slider-wrap
-        .slider-wrap__contacts
+        .slider-wrap__contacts 
           ul.contacts-list
             li.contacts-list__item.contacts-list__item--velcom + 375 29 1 800 600
             li.contacts-list__item.contacts-list__item--mts + 375 33 640 0 660
@@ -29,4 +42,10 @@ header.main-header
             li.contacts-list__item.contacts-list__item--day
             li.contacts-list__item.contacts-list__item--day
             li.contacts-list__item.contacts-list__item--day-vacancy
-          button.raw-button Карта проезда
+          a.raw-button Карта проезда
+      .breadcrumbs-wrap: ul(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumbs-list
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem").breadcrumbs-list__item.breadcrumbs-list__item--first: a(itemprop="item").breadcrumbs-list__link(href="#1") Главная
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem").breadcrumbs-list__item: a(itemprop="item").breadcrumbs-list__link(href="#1") Главная
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem").breadcrumbs-list__item: a(itemprop="item").breadcrumbs-list__link(href="#1") Главная
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem").breadcrumbs-list__item.breadcrumbs-list__item--last: a(itemprop="item").breadcrumbs-list__link.breadcrumbs-list__link--last Прокат инструмента
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem").breadcrumbs-list__item.breadcrumbs-list__item--end

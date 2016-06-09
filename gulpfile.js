@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 	var browserSync = require('browser-sync');
 	var plumber = require('gulp-plumber');
-	// var concatCss = require('gulp-concat-css');
-	// var minifyCss = require('gulp-minify-css');
+	var concatCss = require('gulp-concat-css');
+	var minifyCss = require('gulp-minify-css');
 	var sass = require('gulp-sass');
 	var jade = require('gulp-jade');
 
@@ -63,7 +63,7 @@ gulp.task('watch', function () {
 // Сборка всех css файлов в один, минификация, сохранение в dist/css
 // gulp.task('concss', function() {
 // 	return gulp.src('app/css/**/*.css')
-// 	.pipe(concatCss('main.css'))
+// 	.pipe(concatCss('main.min.css'))
 // 	.pipe(minifyCss())
 // 	.pipe(gulp.dest('dist/css'));
 // });

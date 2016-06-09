@@ -1,0 +1,155 @@
+@media (max-width: 1024px) and (min-width: 768px) {
+	body {
+		min-width:760px;
+	}
+	.slider-wrap__contacts {
+		float: none;
+		margin:0 auto;
+	}
+	.raw-button {
+		width:250px;
+		margin: 0 auto;
+	}
+	.contacts-list {
+		width:250px;
+		margin: 0 auto 10px;
+		&__item--velcom {
+			padding: 40px 0 0 0;
+		}
+	}
+	.right-col {
+		margin: 0;
+		max-width: 80%;
+		margin: 0 auto;
+		transition: all 0.4s ease-in-out;
+		
+	}
+	.content-wrapper {
+		min-width:100%;
+	}
+	.sidebar {
+		float: none;
+		width: 80%;
+		margin: 0 auto 10px;
+	}
+	.category__link {
+		padding: 5px;
+		text-align: center;
+	}
+}
+@media (max-width: 768px) and (min-width: 320px) {
+	body {
+		min-width:480px;
+	}
+	.slider-wrap {
+		display: none;
+	}
+	.sidebar {
+	position: absolute;
+    width: 340px;
+    height: 100%;
+    left: -340px;
+	float: none;
+	transition: all 0.4s ease-in-out;
+
+	}
+	.open-sidebar {
+	position: relative;
+	left:340px;
+	margin: 0;
+	
+	}
+	.slide-sidebar {
+		left:0;
+	}
+	.raw-button {
+		width:250px;
+		margin: 0 auto;
+	}
+	.contacts-list {
+		width:250px;
+		margin: 0 auto 10px;
+		&__item--velcom {
+			padding: 40px 0 0 0;
+		}
+	}
+	.sidebar {
+		height: 100%;
+	}
+	.right-col {
+		margin: 0;
+		max-width: 100%;
+		min-width:320px;
+		transition: all 0.4s ease-in-out;
+		&__heading {
+
+		}
+	}
+	.content-wrapper {
+		min-width:480px;
+	}
+	
+	.category__link {
+		padding: 5px;
+		text-align: center;
+	}
+	.breadcrumbs-wrap {
+		display: none;
+	}
+	.main-nav {
+		&__list {
+			min-width: 100%;
+			text-align: center;
+			text-align-last:center;
+		}
+		&__item {
+		display: block;
+		
+		}
+		&__link {
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	.swipe-area {
+    display: block;
+    width: 400px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+}
+@media (max-width: 480px) and (min-width: 320px) {
+	body {
+		min-width:320px;
+	}
+	.content-wrapper {
+		min-width:320px;
+	}
+	.right-col {
+		width:100%;
+		margin:0 auto;
+		&__heading {
+			width:100%;
+		}
+	}
+	.view-tool {
+	&__left-col {
+    width: 100%;
+    float: none;
+	}
+	&__right-col {
+		margin: 0 auto;
+		float: none;
+		width: 100%;
+	}
+  }
+}
+@media (max-width: 768px) and (min-width: 320px), (max-width: 480px) and (min-width: 320px) { 
+.right-col__tools-item {
+    float: none;
+    width: 100%;
+  }
+}

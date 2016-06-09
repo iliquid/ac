@@ -21,3 +21,33 @@
         });
 
     })(jQuery);
+
+$(document).ready(function() {
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+  $("[data-slide]").click(function() {
+    var slide_el = $(this).data("slide");
+    $(slide_el).toggleClass("slide-sidebar");
+  });
+});
+
+
+// change the value with how many pixels scrolled down the button will appear
+var amountScrolled = 200;
+
+$(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+        $('a.back-to-top').fadeIn('slow');
+    } else {
+        $('a.back-to-top').fadeOut('slow');
+    }
+});
+
+$('a.back-to-top').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 700);
+    return false;
+});
