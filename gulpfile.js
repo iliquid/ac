@@ -61,12 +61,12 @@ gulp.task('watch', function () {
 
 
 // Сборка всех css файлов в один, минификация, сохранение в dist/css
-// gulp.task('concss', function() {
-// 	return gulp.src('app/css/**/*.css')
-// 	.pipe(concatCss('main.min.css'))
-// 	.pipe(minifyCss())
-// 	.pipe(gulp.dest('dist/css'));
-// });
+gulp.task('concss', function() {
+	return gulp.src('app/css/**/*.css')
+	.pipe(concatCss('main.min.css'))
+	.pipe(minifyCss())
+	.pipe(gulp.dest('dist/css'));
+});
 
 // Инициализация всех тасков
 gulp.task('default', ['browser-sync', 'watch']);

@@ -23,11 +23,16 @@
     })(jQuery);
 
 $(document).ready(function() {
-  $("[data-toggle]").click(function() {
+  $("[data-toggle]").click(function(e) {
+    e.preventDefault();
     var toggle_el = $(this).data("toggle");
     $(toggle_el).toggleClass("open-sidebar");
+     $('html, body').animate({
+        scrollTop: 290
+    }, 700);
   });
-  $("[data-slide]").click(function() {
+  $("[data-slide]").click(function(e) {
+    e.preventDefault();
     var slide_el = $(this).data("slide");
     $(slide_el).toggleClass("slide-sidebar");
   });

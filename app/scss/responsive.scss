@@ -1,3 +1,46 @@
+.swipe-area {
+    display: none;
+}
+#sidebar-toggle {
+    background: #DF314D;
+    display: block;
+    position: relative;
+    padding: 6px 7px 5px 7px;
+    float: left;
+}
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: skyblue url("../img/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	cursor:pointer;
+}
+a.menu-toast {
+	background: orange url("../img/menu2.png") no-repeat center 51%;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	left: 20px;
+	bottom: 20px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	 box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 6px;
+	 cursor:pointer;
+	
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
 	body {
 		min-width:760px;
@@ -47,7 +90,6 @@
 	.sidebar {
 	position: absolute;
     width: 340px;
-    height: 100%;
     left: -340px;
 	float: none;
 	transition: all 0.4s ease-in-out;
@@ -146,10 +188,14 @@
 		width: 100%;
 	}
   }
+
 }
 @media (max-width: 768px) and (min-width: 320px), (max-width: 480px) and (min-width: 320px) { 
 .right-col__tools-item {
     float: none;
     width: 100%;
+  }
+   .tool-img {
+  	text-align: center;
   }
 }
